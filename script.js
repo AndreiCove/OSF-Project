@@ -1,6 +1,6 @@
 let heart = document.getElementsByClassName("heart");
 let heartbadge = document.getElementById("heart-badge");
-let plus = document.getElementsByClassName("plus");
+let plus = document.getElementsByClassName("add");
 let plusbadge = document.getElementById("plus-badge");
 
 
