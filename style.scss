@@ -1,0 +1,458 @@
+
+$color-primary: #fff;
+$color-background: rgb(38,42,50);
+$color-font:rgb(69, 65, 62);
+$font-color:rgb(134, 131, 128);
+$color-green:rgb(132,188,34);
+$font-green: rgb(135,196,64);
+$landing-background:rgb(242,237,234);
+
+$font-lato: 'Lato', sans-serif;
+
+/* nav */
+.nav-img {
+    margin:33px 22px 15px 22px;
+}
+.container-fluid {
+    padding:0;
+}
+nav {
+    padding:0;
+}
+.navbar-collapse,
+.navbtt,
+.accordition {
+    background-color: $color-background;
+}
+.navbtt:not(.collapsed) {
+    background-color:$color-background;
+    color:$color-primary;
+    font-style: $font-lato;
+}
+.navbtt::after,
+.navbtt:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.navbtt:focus {
+    box-shadow: 0 0 0 0;
+}
+.list-style a {
+    text-decoration: none;
+    color:$color-primary;
+    font-style: $font-lato;
+}
+
+.list-style {
+    list-style:none;
+}
+strong {
+    color:$color-primary;
+    font-style: $font-lato;
+}
+/* Carousel */
+
+#first-carousel {
+ margin: 23px 14px 23px 15px;
+}
+.control {
+    margin: 33px 14px 0 15px;
+    position:absolute;
+    top:0;
+}
+h4 {
+    font-size: 28px;
+    font-family: $font-lato;
+    color:$color-primary;
+}
+.improve {
+    font-size: 14px;
+    font-family:$font-lato;
+    color:$color-primary;
+    margin-top:56px;
+}
+.view{
+    color:$color-primary;
+    border-color: white;
+    border-radius:30%;
+    margin-left:100px;
+    margin-top:61px;
+}
+
+/* product tile */
+.tile {
+    background-color:$color-background;
+    padding: 31px 14px 28px 15px;
+}    
+div #item {
+    text-align: center;
+    font-size:18px;
+    color:$color-primary;
+    font-family:$font-lato;
+    margin-bottom: 20px;
+}
+.tile-box {
+    background-color: $color-primary;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
+    text-align: center;
+    padding:20px 45px 20px 45px;
+}
+h5 {
+    font-size:18px;
+    font-family:$font-lato;
+    color:$color-font;
+    margin-bottom: 20px;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.hover {
+    background-color:rgba(51,200,122,0.9);
+    border-radius: 6%;
+}
+.hover:hover .image {
+    opacity: 0.5;
+}
+  
+.hover:hover .middle {
+    opacity: 1;
+}    
+.btn-tile{
+    background-color:$color-primary;
+    border-color: $color-primary;
+    border-radius: 50%;
+    border-width: 10px;
+  }
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility:hidden;
+}
+  .plus {
+    font-size:40px;
+    color:green;
+}
+.heart {
+    font-size:40px;
+    color:red;
+}
+#price-button {
+    color: $color-green;
+}
+
+#buy-button {
+    color: black;
+}
+.btt-car{
+    margin-bottom:0;
+}
+
+
+/* Banner */
+.banner {
+    width:100% ;
+}
+.ban-div{
+    position: relative;
+    text-align: center;
+    color: $color-primary;
+}
+.h-text {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+.p-text {
+    position: absolute ;
+    top: 60%;
+    left: 5%;
+    right: 5%;
+    bottom: 30%;
+    
+}
+
+/* benefits content */
+.content {
+    background-color:$color-font;
+    padding-bottom: 38px;
+}
+.cart{
+    margin: 7px 0 0 40px;
+}
+.cont {
+    margin: 28px 14px 0px 15px;
+    padding:0;
+}
+.cont p {
+    font-size:14px;
+    color:$font-color;
+    font-family: 'Lato', sans-serif;
+}
+.cont h3 {
+    font-size:18px;
+    color:$color-primary;
+    font-family: 'Lato', sans-serif;
+}
+/* footer */
+
+footer {
+    padding:22px 14px 65px 15px;
+}
+
+.foot-list {
+    list-style:none;
+    padding:0;
+}
+.foot-space{
+    padding:16px 0 16px 0;
+}
+.foot-list a {
+    text-decoration: none;
+    color:black;
+}
+.icons {
+    display: flex;
+    justify-content:space-evenly;
+    padding-left: 91px;
+    padding-right: 76px;
+}
+.foot-btt:not(.collapsed) {
+   background-color:$color-primary;
+   border-color:$color-primary;
+   color:black;
+}
+.foot-btt:not(.focus) {
+    border-color:$color-primary;
+    box-shadow:none;
+}
+.foot-btt {
+    padding:11px 0 11px 0;
+}
+
+/* login */
+div input {
+    margin:22px 35px 22px 35px;
+}
+.btn-login {
+    background-color:$color-green;
+    border-radius: 25%;
+    width:182px;
+    height: 35px;
+    margin: 0 70px 0 70px;
+}
+#togglePassword {
+    margin-left: -60px;
+    cursor: pointer;
+    color:$font-color;
+}
+.sign {
+    font-size:30px;
+    margin: 37px 100px 0px 130px;
+    color:$color-font;
+    font-family: 'Lato', sans-serif;
+}.account {
+    font-size:12px;
+    color:$color-green;
+    margin:0 95px 0 95px;
+    font-family: 'Lato', sans-serif;
+}
+.form-label {
+    font-size:14px;
+    color: $color-font;
+    font-family: 'Lato', sans-serif;
+}
+/* Nav footer */
+.nav-foot {
+    background-color:$color-background;
+    padding:10px;
+    position:sticky;
+}
+.foot-bar {
+    display: flex;
+    justify-content:space-evenly;
+    margin:0;
+}
+.ic {
+    padding-top:5px;
+    padding-left:5px;
+    color:$color-primary;
+    font-size: 24px;
+}
+#search {
+    padding-top: 10px;
+}
+
+/* Breadcrumbs*/
+
+#bread {
+    background-color:$landing-background;
+    padding: 25px 80px 10px 83px;
+}
+
+.lines {
+    display:flex;
+}
+.lines hr{
+    height: 3px;
+    width: 80px;
+    color:$color-primary;
+}
+.prod-text a:hover{
+    color:black;
+}
+
+/* Filters*/
+.select-box{
+    background-color: $color-primary;
+    padding:13px 14px 25px 15px;
+    border-radius: 0.5rem;
+    --bs-gutter-x: 0;
+}
+.filter-box{
+    padding:0px 14px 10px 15px;
+    background-color: $landing-background;
+    
+}
+.hide {
+    font-size:13px;
+    font-family: $font-lato;
+    color:$font-green;
+    text-align: center;
+    margin-bottom:20px;
+}
+.select-btt{
+    width:200px;
+    font-size:13px;
+    font-family: $font-lato;
+    color:$color-font;
+    border-radius: 1.25rem;
+}
+.col-box{
+    display:flex;
+    justify-content: space-between;
+    margin:14px 0;
+}
+.style-color{
+    border-radius: 2rem;
+    width:11px;
+    height:11px;
+}
+.btn-line {
+    display: flex;
+    justify-content: space-between;
+    --bs-gutter-x: 3em;
+}
+.white {
+    background-color: $color-primary;
+    border: 2px solid black;
+}
+.cyan {
+    background-color: rgb(67,192,207);
+}
+.black {
+    background-color:black;
+}
+.green {
+    background-color: rgb(74,175,0);
+}
+.blue {
+    background-color: rgb(49,91,189);
+}
+.orange {
+    background-color: rgb(236,97,21);
+}
+.red {
+    background-color: rgb(220,4,29);
+}
+.nude {
+    background-color: rgb(239,234,215);
+}
+
+/* Results*/
+
+.result {
+    background-color:$landing-background;
+    padding:0 14px 50px 15px;
+}
+.n-result{
+    font-size:14px;
+    font-family:$font-lato;
+    color:$font-color;
+}
+.n-text {
+    font-size:13px;
+    font-family:$font-lato;
+    color:$font-color;
+    margin-left:5px;  
+}
+.search-result{
+    display:flex;
+    justify-content: center;
+}
+.card {
+    border-radius:0.5rem;
+    margin-bottom: 31px;
+}
+.card-title {
+    font-family: $font-lato;
+    font-size:16px;
+    color: $color-font;
+    text-align: center;
+}
+.card-text{
+    font-family: $font-lato;
+    font-size:16px;
+    color: $font-color;
+    text-align: center;
+}
+.load {
+    color:$color-primary;
+    background-color: $color-green;
+    width:132px;
+    height: 35px;
+    font-size: 16px;
+    border-radius: 1rem;
+    margin-left: 105px;
+}
+
+/* Products-nav*/
+
+.cont-product {
+    padding: 24px 14px 35px 15px;
+    background-color: $landing-background;
+}
+.green-bread{
+    font-size:13px;
+    font-family:$font-lato;
+    color:$color-green;
+    text-decoration: none;
+    text-align:center;
+}
+.prod-text {
+    font-size:13px;
+    font-family: $font-lato;
+    color:$color-font;
+    text-align:center;
+}
+.prod-title {
+    font-weight: 700;
+    font-size: 31px;
+    font-family:$font-lato;
+    color:$color-font;
+    text-align: center;
+}
+.breadcrumb {
+    justify-content: space-evenly;
+}
+
+/* Products*/
