@@ -225,6 +225,7 @@ footer {
     justify-content:space-evenly;
     padding-left: 91px;
     padding-right: 76px;
+    list-style: none;
 }
 .foot-btt:not(.collapsed) {
    background-color:$color-primary;
@@ -245,7 +246,7 @@ div input {
 }
 .btn-login {
     background-color:$color-green;
-    border-radius: 25%;
+    border-radius: 1rem;
     width:182px;
     height: 35px;
     margin: 0 70px 0 70px;
@@ -456,3 +457,106 @@ div input {
 }
 
 /* Products*/
+.img-box {
+    background-color: $color-primary;
+}
+.cursor {
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+.prod-slide{
+    content: "";
+    clear: both;
+    display: table;
+    margin-left:50px;
+}
+.prod-img {
+    float: left;
+    width: 33.33%;
+    margin: 5px;
+}
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+/* Products description*/
+.price-prod{
+    font-family: $font-lato;
+    font-weight:700;
+    color:$color-font;
+    font-size:31px;
+}
+.prod-desc{
+    background-color: $color-primary;
+    padding:40px 9px 26px 9px;
+}
+.color-btt{
+    width:156px;
+    height: 36px;
+    border-color: rgb(232,226,214);
+}
+.amount{
+    width:156px;
+    height: 36px;
+    background-color: $color-green;
+    border-radius: 1rem;
+    margin-top:29px;
+    margin-right: 50px;
+    font-size:14px;
+    font-family: $font-lato;
+    color:$color-primary;
+}
+#more {display: none;}
+
+#read-btt {
+    background-color:$color-primary;
+    border:none;
+    color:$font-green;
+    font-family: $font-lato;
+    font-size:16px;
+}
+.text-read {
+    font-size: 16px;
+    font-family: $font-lato;
+    margin-top:32px;
+}
+.social {
+    font-family: $font-lato;
+    font-size:14px;
+    color:$font-color;
+}
+.social-ic{
+    list-style:none;
+    display:flex;
+    justify-content: space-around;
+    padding:0;
+    margin-top:32px;
+}
+
+/* Products popular*/
+
+.pop-items {
+    background-color: $landing-background;
+    padding:20px 14px 53px 15px;
+}
+.card-title {
+    font-size:18px;
+    font-family: $font-lato;
+    font-weight: 700;
+    color:$color-font;
+    margin-bottom: 10px;
+}
+.scroll{
+    color:$color-primary;
+    text-decoration:none;
+}
+.scroll-btt{
+    display:flex;
+    justify-content: space-around;
+}
+
+
