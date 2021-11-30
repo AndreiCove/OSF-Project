@@ -498,6 +498,7 @@ div input {
     width:156px;
     height: 36px;
     border-color: rgb(232,226,214);
+    margin-bottom: 8px;
 }
 .amount{
     width:156px;
@@ -536,7 +537,16 @@ div input {
     padding:0;
     margin-top:32px;
 }
-
+.quanti{
+    background-color: $color-primary;
+    border-color:rgb(232,226,214);
+    height:37px;
+    width:36px;
+    border-radius:1rem;
+}
+#inc {
+    margin-right: 100px;
+}
 /* Products popular*/
 
 .pop-items {
@@ -559,4 +569,94 @@ div input {
     justify-content: space-around;
 }
 
+/* 404 Page*/
+.not-found{
+    background-color: $landing-background;
+    padding:10px 14px 15px 15px;
 
+}
+.not-box{
+    display:flex;
+    justify-content: space-evenly;
+}
+.not-lines {
+    color: rgb(53, 52, 50);
+    width: 80px;
+    text-align: center;
+    margin-top:30px;
+
+}
+
+.not-title {
+    font-family: $font-lato;
+    font-size:48px;
+    font-weight: 700;
+    text-align: center;
+    color:$color-font;
+}
+#not-found{
+    background-color: $color-primary;
+    background-image: url(img/alert.png) ;
+    border-radius: 0.5rem;
+    background-repeat: no-repeat;
+}
+#not-found h2{
+    font-family: $font-lato;
+    font-size:100px;
+    font-weight: 1100;
+    text-align: center;
+    color:$color-green;
+}
+#not-found h6 {
+    font-family: $font-lato;
+    font-size:24px;
+    font-weight: 700;
+    text-align:left;
+}
+#not-found p {
+    font-family: $font-lato;
+    font-size:16px;
+    text-align:left;
+    color:$color-font;
+}
+#not-found a{
+    font-family: $font-lato;
+    color: $font-green;
+    font-size: 16px;
+    text-decoration: none;
+}
+.search-bar {
+    margin-left:0;
+}
+.abs{
+    position:absolute;
+    top:101%;
+    right:23%;
+    font-size:16px;
+    color:$font-color;
+}
+
+/* Cookies*/
+
+.cookie-banner {
+    position: fixed;
+    bottom: 40px;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    padding: 5px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  .close {
+    height: 20px;
+    background-color: #777;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+  }
